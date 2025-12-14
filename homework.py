@@ -24,7 +24,7 @@ def get_date():
             print("Invalid date format. Please use YYYY-MM-DD.")
 
 
-def get_amount():
+def get_amount():  # 金額輸入
     while True:
         try:
             amount = float(input("Enter amount: ").strip())
@@ -35,7 +35,7 @@ def get_amount():
             print("Amount must be a positive number.")
 
 
-def get_category():
+def get_category():  # 類別輸入
     while True:
         category = input("Enter category: ").strip()
         if category:
@@ -43,11 +43,11 @@ def get_category():
         print("Category cannot be empty.")
 
 
-def get_notes():
+def get_notes():  # 備註 (選填)
     return input("Enter notes (optional): ").strip()
 
 
-def add_expense():
+def add_expense():  # 整合用
     expense = {
         "date": get_date(),
         "amount": get_amount(),
@@ -66,7 +66,7 @@ def main():
     init_file()
     print("=== Expense Input Module ===")
 
-    while True:
+    while True:  # 可以連續輸入多筆資料
         add_expense()
         cont = input("Add another expense? (y/n): ").strip().lower()
         if cont != "y":
