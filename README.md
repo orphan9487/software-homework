@@ -60,6 +60,5 @@ streamlit run app.py
 
 ## Demo Video
 
-[![影片標題](https://img.youtube.com/vi/影片ID/0.jpg)](https://www.youtube.com/watch?v=影片ID)
+[![影片標題](https://img.youtube.com/vi/awU7GOSQpE8/0.jpg)](https://www.youtube.com/watch?v=awU7GOSQpE8)
 
-(影片標題修改、影片ID is "v=後面那串" )
